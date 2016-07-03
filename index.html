@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<link rel="stylesheet" href="css/jquery.fullPage.css">
+	<link rel="stylesheet" href="css/index.css">
+<style>
+.section { text-align: center; font: 50px "Microsoft Yahei"; color: #fff;}
+</style>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery.fullPage.min.js"></script>
+<script>
+	/*$('.contain').fullpage({
+		afterLoad:function(anchorLink,index){
+			sections.removrattr('id')
+			sections.eq(index-1).attr('id','active')
+		}
+		$('.button').click(function(){
+			fn.fullpage.xiangxiangund fangfa
+		})
+	})*/
+$(function(){
+	$('.contain').delegate('.bottom a', 'click', function(e){
+		e.preventDefault();
+		$.fn.fullpage.moveSectionDown();
+	}).fullpage({
+        'navigation': true,
+			'navigationPosition': 'right',
+			'navigationTooltips': ['登陆百度舆情', '领先 数据收集与处理', '全面 舆情分析逻辑与架构', '专业 专业数据可视化'],
+	});
+});
+</script>
+</head>
+<body>
+<!-- 头部开始 -->
+<div class="head">
+    <div class="head-inner">
+	<div class="head-left lt">
+		<a href="#" class='logo lt'></a>
+		<div class="head-lbox lt">
+			<a href="">首页</a>
+			<a href="">产品介绍</a>
+			<a href="">用户版</a>
+		</div>
+	</div>	
+	<div class="head-right gt">
+		<a href="#">手机客户端<i></i></a>
+		<a href="#">百度司南</a>
+		<a href="#">联系我们</a>
+		<a href="#" class='yed'>申请试用</a>
+	</div>
+	</div>	
+</div>
+
+	<div class="contain">
+		<div class="section">
+		<dic class="cloud">
+				<div class="cloud1"></div>
+				<div class="cloud2"></div>
+			</dic>
+		 <div class="inner">
+			
+
+			<div class="wenzi">
+				<img src="img/launch_deea86c.png" alt="">
+				<img src="img/flight_ade8ee2.png" alt="">
+			</div></div>
+            <div class="denglu">
+                        <div class="dltop">
+                            <div><span></span><input type="text" value="用户名" style="color:#ccc"></div>
+                            <div><span></span><input type="text" value="密码" style="color:#ccc"></div>
+                            <div>
+                                <input type="text">
+                                <img src="" alt="">
+                                <a href="#">换一张</a>
+                            </div>
+
+
+                        </div>
+                        <div class="dlbot">
+                            <div>登录</div>
+                            <div><a href="#"><span></span>安全控件常见问题</a><a href="#">忘记密码</a></div>
+                        </div>
+                    </div>
+
+			
+			<div class="bottom bone">
+				<a href=""></a>
+			</div>
+			<div class="ship">
+				<img src="img/ship.png" alt="">
+				<img src="img/hill_1_0d79217.png" alt="">
+				<img src="img/hill_2_540422f.png" alt="">
+				<img src="img/hill_3_ace39fb.png" alt="">
+			</div>
+		</div>
+		<div class="section ptwo">
+		 <div class="inner">
+			<div class="left lt">
+				<h3>全面</h3>
+	    		<div class="text">
+	    			<h4>数据收集与处理</h4>
+	    			<p>15年专业数据收集与语义分析技术积累<br>
+	    			卓越极致，不断攀登</p>
+	    		</div>
+			</div>
+			<div class="rightr rtwo">
+				
+			</div></div>
+			<div class="bottom">
+			<a href=""></a>
+			<div class="btwo">
+				<div class="two1"></div>
+				<div class="two2"></div>
+				<div class="two3"></div>
+				<div class="two4"></div>
+				<div class="two5"></div></div>
+			</div>
+		 
+		</div>
+		<div class="section pthree">
+			<div class="inner">
+			<div class="threebg">
+				<div class="threebox">
+					<div class="tbox1"></div>
+					<div class="tbox2"></div>
+					<div class="tbox3"></div>
+					<div class="tbox4"></div>
+					<div class="tbox5"></div>
+				</div>	
+			</div>
+			<div class="left">
+				<h3>全面</h3>
+	    		<div class="text">
+	    			<h4>数据收集与处理</h4>
+	    			<p>15年专业数据收集与语义分析技术积累<br>
+	    			卓越极致，不断攀登</p>
+	    		</div>
+			</div>
+			<div class="rightr rthree">
+				
+			</div></div>
+			<div class="bottom bthree">
+				<a href=""></a>
+			</div>
+		 
+		</div>
+		<div class="section pfour">
+
+			<div class="inner">
+			<div class="fourbg">
+				<div class="bgbox">
+					
+				</div>
+			</div>
+			<div class="left">
+				<h3>全面</h3>
+	    		<div class="text">
+	    			<h4>数据收集与处理</h4>
+	    			<p>15年专业数据收集与语义分析技术积累<br>
+	    			卓越极致，不断攀登</p>
+	    		</div>
+			</div>
+			<div class="rightr rfour">
+				
+			</div></div>
+			<div class="bottom bfour">
+				<p style='color:#fff;font-size:12px;position:absolute;bottom:40px;left:50%;transform:translateX:(50%)'>	@baidu  使用百度前必读</p>
+			</div>
+		 
+		</div>
+	</div>
+</body>
+</html>
